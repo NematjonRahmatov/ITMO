@@ -1,223 +1,174 @@
-\documentclass{article}
-
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{multicol}
-\usepackage[8pt]{extsizes}
-\usepackage[papersize={17cm, 23cm}, left=8mm, top=-1mm, right=8mm, bottom=20mm]{geometry}
+\usepackage[papersize={21cm, 36cm}, left=10mm, top=15mm, right=15mm, bottom=25mm]{geometry}
 \usepackage{mathtools}
+\documentclass[captions=tableheading]{scrbook}
+\usepackage{caption}
+\usepackage{tikz} 
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \graphicspath{{pictures/}}
 \usepackage[usenames]{color}
 \usepackage[most]{tcolorbox}
 \usepackage{colortbl}
 \usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
+\usepackage{float}
+\usepackage[leftcaption]{sidecap}
+\setlength{\columnsep}{1cm}
 \DeclareGraphicsExtensions{.png}
 \usepackage{afterpage}
-\fancyfoot[R]{39}
+\fancypagestyle{mystile}{
+\fancyhf{}
+\fancyfoot[r]{\textbf{47}}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+}
+\pagestyle{mystile}
 
 \begin{document}
 \begin{multicols}{2}
+\setcounter{figure}{5}
+\begin{figure}[H]
+    \includegraphics[scale=0.5]{ris6.png}
+    \captionsetup{singlelinecheck=off}
+    \caption{}
+    \label{fig:ris6}
+\end{figure}
 
 \parindent0pt
-\includegraphics[scale=0.4]{ris2.png}
-
-\parindent0pt
-\scalebox{1.5}{%
-Аналогично   получаем}
-
-\parindent0pt
-\scalebox{1.5}{%
-$\angle$$\mathnormal{B_{n+1}=\mathrm{(-2)}^{n}\cdot}(\angle B_{1}-\frac{\pi}{3})+\frac{\pi}{3}$}\\
-\scalebox{1.3}{%
-и}\\
-\scalebox{1.5}{%
-$\angle$$\mathnormal{C_{n+1}=\mathrm{(-2)}^{n}\cdot}(\angle C_{1}-\frac{\pi}{3})+\frac{\pi}{3}$}\\
-
-\parindent10pt
-\scalebox{1.3}{%
-В заключение мы предлагаем чи-}\\
-\scalebox{1.3}{%
-тателям несколько задач для само-}\\
-\scalebox{1.3}{%
-стоятельного решения.}\\
-
-\parindent15pt
-У п р а ж н е н и я
-
-\parindent15pt
-1. Около  остроугольного  треугольника\\
-$\mathnormal{A_{1}B_{1}C_{1}}$ описан остроугольный треугольник\\
-$\mathnormal{A_{2}B_{2}C_{2}}$, стороны которого являются каса-\\
-тельными к окружности, описанной около\\
-треугольника $\mathnormal{A_{1}B_{1}C_{1}}$ в его вершинах. Около\\
-треугольника $\mathnormal{A_{2}B_{2}C_{2}}$ аналогичным образом\\
-описан остроугольный треугольник $\mathnormal{A_{3}B_{3}C_{3}}$\\
-и так далее, вплоть до треугольника\\
-$\mathnormal{A_{n+1}B_{n+1}C_{n+1}}$ включительно. Найти углы\\
-треугольника $\mathnormal{A_{n+1}B_{n+1}C_{n+1}}$.
-
-\parindent15pt
-2. Около треугольника $\mathnormal{A_{1}B_{1}C_{1}}$ описан\\
-треугольник $\mathnormal{A_{2}B_{2}C_{2}}$ вершины которого сов-\\
-падают с центрами вневписанных окружнос-\\
-тей в треугольник $\mathnormal{A_{1}B_{1}C_{1}}$. Около треуголь-\\
-ника $\mathnormal{A_{2}B_{2}C_{2}}$ аналогичным образом описан\\
-треугольник $\mathnormal{A_{3}B_{3}C_{3}}$ и так далее. Найти уг-\\
-лы треугольника $\mathnormal{A_{n+1}B_{n+1}C_{n+1}}$. Доказать,\\
-что треугольник $\mathnormal{A_{n+1}B_{n+1}C_{n+1}}$ при неогра-\\
-ниченном возрастании n стремится к пра-\\
-вильному треугольнику.
-
-\parindent15pt
-3. Биссектрисы треугольника $\mathnormal{A_{1}B_{1}C_{1}}$\\
-продолжены до пересечения с описанной\\
-вокруг треугольника $\mathnormal{A_{1}B_{1}C_{1}}$ окружностью\\
-соответственно в точках $\mathnormal{A_{2}, B_{2}, C_{2}}$. Бис-\\
-сектрисы треугольника $\mathnormal{A_{2}B_{2}C_{2}}$ пересекают\\
-описанную окружность соответственно в точ-\\
-ках $\mathnormal{A_{3}, B_{3}, C_{3}}$ и так далее. Найти углы\\
-треугольника $\mathnormal{A_{n+1}B_{n+1}C_{n+1}}$.
-
-\parindent15pt
-4. В треугольник $\mathnormal{A_{1}B_{1}C_{1}}$ вписан тре-\\
-угольник $\mathnormal{A_{2}B_{2}C_{2}}$ образованный проекция-\\
-ми центра вписанной окружности на его сто-\\
-роны. В треугольник $\mathnormal{A_{2}B_{2}C_{2}}$ аналогичным\\
-образом вписан треугольник $\mathnormal{A_{3}B_{3}C_{3}}$ и\\
-так далее. Найти углы треугольника\\
-$\mathnormal{A_{n+1}B_{n+1}C_{n+1}}$. \\ \\
+лежать отрезки $a$ и $b$. (В этой и следующих)\linebreak
+формулах $a$, пр $b$ и т.п. ознают длины со-\linebreak
+ответствующих отрезков.) Наименьший угол\linebreak
+между прямыми не превосходит $\pi$/2, поэто-\linebreak
+му $\mathrm{cos\alpha \ge 0}$. Из (1) следует равенство \\
+\setcounter{equation}{1}
+\begin{equation}
+    \label{eq:eq2}
+    a \text{ пр}_{a}{b} = b \text{ пр}_{\alpha}a,
+\end{equation}
+которое пригодится нам при решении задачи.\linebreak
+\rule{0.85cm} ООбозначим через $P$ центр верхнего, а\linebreak
+через $Q^{\prime}$ — центр нижнего оснований пирами-\linebreak
+ды. Мы докажем следующий факт, несколь-\linebreak
+ко более общий, чем нужное нам утвержде-\linebreak
+ние задачи \textbf{M168}. \\
+\rule{0.85cm} ППусть плоскости двух подобных равно-\linebreak
+бедренных треугольников $ABP$ и $CDQ$ с вер-\linebreak
+шинами $P$ и $Q$ перпендикулярны отрезку $PQ$\linebreak
+(и, тем самым, параллельны между собой).\linebreak
+Обозначим отрезок, соединяющий середины\linebreak
+$K$ и $L$ оснований $AB$ и $CD$ через $s$ Тогда\linebreak
+(рис. \ref{fig:ris6}).
+%\equation\text{ пр}_{s}{k} = \text{ пр}_{s}{l},\label{eq:test}\eqno(3)
+\begin{equation}
+    \label{eq:eq3}
+    \text{ пр}_{s}{k} = \text{ пр}_{s}{l},
+\end{equation}
+Пользуясь \eqref{eq:eq2}, мы вместо \eqref{eq:eq3} можем доказы-\linebreak
+вать такое равенство:
+\begin{equation}
+    \label{eq:eq4}
+    k \text{ пр}_{k}{s} = t\text{ пр}_{t}{s},
+\end{equation}
+Теперь воспользуемся тем, что как это сле-\linebreak
+дует из (1), длина пр $b_{a}$ не меняется при па-\linebreak
+раллельном переносе отрезков $а$ и $b$. Поэто-\linebreak
+му мы можем спроектировать отрезок $k=AB$\linebreak
+на плоскость, треугольника $CDQ$ и получим:
+\begin{multline}
+\large{\text{ пр}_{A^{\prime}B^{\prime}}K^{\prime}L = \text{ пр}_{^{\prime}B^{\prime}}KL = \text{ пр}_{AB}KL = \\ 
+= \text{ пр}_{k}{s},}
+\label{eq:eq5}
+\end{multline}
+\begin{figure}[H]
+    \includegraphics[scale=0.6]{ris7.png}
+    \captionsetup{singlelinecheck=off}
+    \caption{}
+    \label{fig:ris7}
+\end{figure} 
 
 %\begin{left}
 %\end{left}
 
 \parindent0pt
-\scalebox{2}{%
-Головоломки}\\
+где $A^{\prime}$, $B^{\prime}$ и $K^{\prime}$ $-$ проекции точек $A$, $B$ и $K$\linebreak
+на плоскость $CDQ$ (рис. \ref{fig:ris7}). Таким образом,\linebreak
+мы свели задачу к тому случаю, когда оба\linebreak
+треугольника лежат в одной плоскости (и име-\linebreak
+ют общую вершину).
 
-\scalebox{1.3}{% 
-В следующих примерах раз-}\\
-\scalebox{1.3}{% 
-ные цифры зашифрованы раз-}\\
-\scalebox{1.3}{% 
-ными буквами (в разных}\\
-\scalebox{1.3}{% 
-примерах, возможно, раз-}\\
-\scalebox{1.3}{% 
-ными). Расшифруйте!}
+\rule{0.85cm} ЕЕсли отрезки $AB$ и $CD$ параллельны,\linebreak
+то равенство \eqref{eq:eq4} очевидно, поскольку обе\linebreak
+проекции равны нулю. Если эти отрезки не-\linebreak
+параллельны, то получаем:
+\begin{multline}
+\displaymath\large{\frac{k}{l}=\frac{A^{\prime}B^{\prime}}{CD}=\frac{QK^{\prime}}{QL}=\frac{\sin \angle QLK^{\prime}}{\sin \angle QK^{\prime}L}= \\
+=\frac{\mid \cos \angle K^{\prime}LC \mid}{\mid \cos \angle LK^{\prime}B^{\prime} \mid}=\frac{\text{пр}_{l}{s}}{\text{пр}_{k}{s}}, }
+\end{multline}
+откуда следует \eqref{eq:eq4}. \\
 
-\parindent15pt
-\scalebox{1.3}{%
-1. do$\times$ do $=$ sol.}
-
-\parindent15pt
-\scalebox{1.3}{%
-2. la$\times$la $=$ sol.}
-
-\parindent15pt
-\scalebox{1.3}{%
-3. си$\times$си $=$ соль. }
-
-\parindent15pt
-\scalebox{1.3}{%
-4. до$\times$до$\times$до $=$ соль. }
-
-\parindent15pt
-\scalebox{1.3}{%
-5. ля$\times$ля$\times$ля $=$ соль. } 
-
-\parindent50pt
-\scalebox{1.3}{%
-\textit{В. С. Максимов} } \\ \\
-
+\parindent21pt
+\textbf{M169}. Пусть $k < n$ - натуральные чис-\linebreak
+ла. Расставьте числа 1, 2, 3, \dots, $n^{2}$ в табли-\linebreak
+цy $n \times n$ тaк, чтобы в каждой строке чис-\linebreak
+ла шли в порядке возрастания и при этом\linebreak
+сумма чисел в $k$-м столбце была а) наимень-\linebreak
+шей; б) наибольшей. \\
+\rule{0.85cm} РРешим сначала задачу а).\\
+\rule{0.85cm} ЕЕсли расставить числа так, как показа-\linebreak
+но в таблице 1, $a-$ сначала заполнить первые\linebreak
+$k$-столбцов, строку за строкой, числами от\linebreak
+1 до $kn$, а затем оставшимися числами запол-\linebreak
+нить последние $(n - k)$ столбцов (как угод-\linebreak
+го, лишь бы выполнялось условие возраста-\linebreak
+ния чисел в каждом строке)$-$ то сумма чи-\allowdisplaybreaks 
+\begin{table}[H]
+  \captionsetup{singlelinecheck=off}
+  \caption*{Т а б л и ц а  1$a$}
+\begin{tabular}{ |r r r r|r| c| } 
+\multicolumn{4}{c}{} & \multicolumn{1}{r}{$k$} & \multicolumn{1}{r}{} \\ 
+\hline
+ 1 & 2 & \dots & $k - 1$ & $k$ & $nk + 1 \dots$ \\ 
+ $k + 1$ & $k + 2$ & \dots & $2k - 1$ & $2k$ &  \\ 
+ $2k + 1$ & $2k + 2$ & \dots & $3k - 1$ & 3k &  \\
+ \dots & \dots & \dots & \dots &  & \\
+\multicolumn{2}{|l}{$(n - 1)k + 1$ \hspace{5}.  .  .} & \dots & $nk - 1$ & $nk$ & {.    .    .    $n^{2}$}
+  & & & & & & \\
+ \hline
+\end{tabular}
+\label{table:1}
+\end{table}
 \parindent0pt
-\scalebox{2}{%
-Равенства}\\ \\
-\scalebox{2}{%
-из спичек}\\
-
-\parindent0pt
-\includegraphics[scale=0.4]{sp.png}
-
-\scalebox{1.3}{%
-В этих равенствах, сло-}\\
-\scalebox{1.3}{%
-женных из спичек, допущены}\\
-\scalebox{1.3}{%
-ошибки. Переложите в каж-}\\
-\scalebox{1.3}{%
-дом из равенств только по}\\
-\scalebox{1.3}{%
-одной спичке так, чтобы все}\\
-\scalebox{1.3}{%
-равенства стали верными.}
-
-\parindent50pt
-\scalebox{1.3}{%
-\textit{Н. К. Антонович} } \\ \\
-
-\parindent0pt
-\scalebox{2}{%
-Задачи}\\ \\
-
-\parindent15pt
-\scalebox{1.3}{%
-1. Решить     уравнение
-}\\
-\parindent0pt
-\scalebox{1.3}{%
-$x^{4}-3x^{3}+3=0$.
-}
-
-\parindent15pt
-\scalebox{1.3}{%
-2. Показать, что при лю-}
-
-\parindent0pt
-\scalebox{1.3}{%
-бом действительном $р$ таком,}\\
-\scalebox{1.3}{%
-что $|p|\leq \sqrt[4]{4q}$, уравнение}\\
-\scalebox{1.3}{%
-$x^{4}+px^{3}+q=0$, $q > 0$}\\
-\scalebox{1.3}{%
-действительных решений не}\\
-\scalebox{1.3}{%
-имеет.}
-
-\parindent15pt
-\scalebox{1.3}{%
-3. Показать, что при лю-}
-
-\parindent0pt
-\scalebox{1.3}{%
-бом действительном $р$ таком,
-}\\
-\scalebox{1.3}{%
-что $|p|\leq \sqrt[4]{12}$, уравнение}\\
-\scalebox{1.3}{%
-$x^{4}-px^{3}+3=0$}\\
-\scalebox{1.3}{%
-действительных решений не}\\
-\scalebox{1.3}{%
-имеет.}
-
-\parindent15pt
-\scalebox{1.3}{%
-4. Найти действитель-}
-
-\parindent0pt
-\scalebox{1.3}{%
-ные решения системы}\\
-\scalebox{1.3}{%
-$x^{3}y = -4$, $x - y = 1,5$.}
-
-\parindent60pt
-\scalebox{1.3}{%
-\textit{Г. Ю. Зайцев}}
-
+сел в $k$-м столбце будет равна
+\setcounter{equation}{0}
+\begin{equation}
+k(1 + 2 + \ldots + n) = \frac{kn(n + 1)}{2}.
+\label{eq:eq11}
+\end{equation}
+Мы докажем, что это значение суммы явля-\linebreak
+ется наименьшим. Сначала докажем, что\linebreak
+если $a_{1}, a_{2}, \ldots, a_{n} -$ числа $k$-го столбца, за- \linebreak
+нумерованные в порядке возрастания:
+\begin{equation}
+    a_{1} < a_{2} < \ldots < a_{i} < ... < a_{n}
+    \label{eq:eq12}
+\end{equation}
+то
+\begin{equation}
+    a_{i} \geq k_{i}.
+    \label{eq:eq13}
+\end{equation}
+Действительно, рассмотрим числа, стоящие\linebreak
+в тех же строках, где стоят $a_{1}, a_{2}, \ldots, a_{i},$\linebreak
+и в первых $k$ столбцах. Из условия \eqref{eq:eq12} и усло-\linebreak
+вия, что числа в строках стоят в возрастаю-\linebreak
+щем порядке, следует, что эти $ki$ чисел не пре-\linebreak
+восходят числа $a_{i}$. Следовательно, среди чи-\linebreak
+сел $1, 2, 3, \ldots, n^{2}$ имеется по крайней мере\linebreak
+$ki$ чисел, не превосходящих $ai$. Отсюда вы-\linebreak
+текает \eqref{eq:eq13}. Сложив неравенства \eqref{eq:eq13} по всем\linebreak
 \end{multicols}
 \end{document}
